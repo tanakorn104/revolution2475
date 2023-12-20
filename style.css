@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Russo One', sans-serif;
+}
+
+:root{
+    --headtext-color:#b16355;
+    --prigreen-color:#487460;
+    --secpink-color:#ad8174;
+    
+}
+
+.content{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-image: url(./img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+p{
+    color: #b3b3b3;
+    /* font-family: 'Kanit', sans-serif; */
+    
+
+}
+b{
+    color: white;
+    /* font-family: 'Kanit', sans-serif; */
+}
+
+.block{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 96vw;
+    padding: 10px;
+
+}
+.card{
+    position: relative;
+    height: 300px;
+    width: 180px;
+    background-color: white;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img{
+    width: 100%;
+    height: 50%;
+}
+
+.card:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.1s;
+}
+
+.backhome{
+    width: 100vw;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--secpink-color);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    
+}
+.backhome:hover{
+    background-color: white;
+    color: #000;
+    transition: 1s;
+}
